@@ -5,8 +5,8 @@ from test_case import read_test_case
 from sys import argv
 import time
 
-NUM_POPULATION = 200
-NUM_GENERATION = 200
+NUM_POPULATION = 50
+NUM_GENERATION = 50
 
 PROB_MUTATION = 0.05
 PROB_CROSS    = 0.8
@@ -35,7 +35,6 @@ def main():
     print("Makespan:", population.elite.fitness)
     print("Tempo gasto:", end_time - start_time, "segundos.")
     print("Ordem [formato (Item, Máquina)]: ", population.elite.values)
-
 
     pyplot.plot(best_values, linestyle="solid", color="r")
 
